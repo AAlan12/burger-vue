@@ -39,7 +39,21 @@
 
 <script>
 export default {
-    name: "Dashboard"
+    name: "Dashboard",
+    data() {
+        return {
+            burger: null,
+            burger_id: null,
+            status: []
+        }
+    },
+    methods: {
+        async getPedidos() {
+            const req = await fetch("http://localhost:3000/burgers ");
+            const data = await req.json();
+            this.burgers = data;
+        }
+    }
 }
 </script>
 
