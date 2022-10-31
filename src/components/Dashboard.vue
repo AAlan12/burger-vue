@@ -49,7 +49,7 @@ export default {
     },
     methods: {
         async getPedidos() {
-            const req = await fetch("http://localhost:3000/burgers ");
+            const req = await fetch("http://localhost:3000/burgers");
             const data = await req.json();
             this.burgers = data;
 
@@ -59,6 +59,14 @@ export default {
             const req = await fetch("http://localhost:3000/status");
             const data = await req.json();
             this.status = data;
+        },
+        async deleteBurger(id) {
+            const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+                method: "DELETE"
+            });
+            const res = await req.json();
+
+            this.getPedidos();
         }
     },
     mounted() {
@@ -114,7 +122,7 @@ select {
     border: 2px solid #222;
     padding: 10px;
     font-size: 16px;
-    margin: 0 auto; 
+    margin: 0 auto;
     cursor: pointer;
     transition: .5s;
 }
