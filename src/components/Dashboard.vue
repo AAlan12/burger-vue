@@ -52,7 +52,17 @@ export default {
             const req = await fetch("http://localhost:3000/burgers ");
             const data = await req.json();
             this.burgers = data;
+
+            this.getStatus();
+        },
+        async getStatus() {
+            const req = await fetch("http://localhost:3000/status");
+            const data = await req.json();
+            this.status = data;
         }
+    },
+    mounted() {
+        this.getPedidos();
     }
 }
 </script>
