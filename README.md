@@ -1,19 +1,27 @@
+<div align="center" >
+  <img src="https://github.com/AAlan12/burger-vue/blob/main/src/assets/img%20vitdev/tumb2.PNG?raw=true"/>
+</div>
+
 # burger-vue
 
-## Project setup
-```
-npm install
-```
+App de gerenciamento de pedidos de uma hamburgueria
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | burger-vue
+| :label: Tecnologias | Vue, Html, JavaScript
+| :rocket: URL         | https://burger-vue-six.vercel.app/
+| :fire: Desafio     | https://vercel.com/aalan12/burger-vue
 
-### Compiles and minifies for production
-```
-npm run build
-```
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![](https://github.com/AAlan12/burger-vue/blob/main/src/assets/img%20vitdev/tumb1.PNG?raw=true#vitrinedev)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Detalhes do projeto
+
+### Tecnologias e ferramentas
+
+- HTML5
+- JavaScript
+- Vue 3
+
+
